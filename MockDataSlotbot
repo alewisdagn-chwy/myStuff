@@ -1,0 +1,39 @@
+INSERT INTO outputs.item_attributes ( item_number, wh_id, execution_id, current_class_id, recommended_class_id, current_pick_put_type, recommended_pick_put_type, current_forward_pick_location_type, recommended_forward_pick_location_type, recommendation_reason, rejection_comment, status_id, rejection_type_id )
+VALUES ('110' ,        'RNO1',        17,        5,        5,        'AUTO-PALLET',        'PALLET',        '4 Deep',        '4 Deep',        null,        null,        'CREATED',        null    ),
+    (        '111',        'RNO1',        17,        5,        5,        'PALLET',        'PALLET',        '4 Deep',        '4 Cluster',        null,        null        'CREATED',        null    ), 
+(        '112',        'RNO1',        17,        5,        5,        'AUTO-PALLET',        'PALLET',        '4 Deep',        '4 Cluster',        null,        null,        'CREATED',        null    ), 
+(        '113' ,        'RNO1',        17,        5,        5,        'PALLET',        'AUTO-PALLET',        '4 Deep',        '4 Deep',        null,        null,        'CREATED',        null    ),
+    (        '114' ,        'RNO1',        17,        5,        6,        'AUTO-PALLET',        'PALLET',        '4 Deep',        '4 Deep',        null,        null,        'CREATED',        null    ), 
+(        '115',        'RNO1',        17,        5,        6,        'AUTO-PALLET',        'PALLET',        '4 Deep',        '4 Cluster',        null,        null,        'CREATED',        null ), 
+(        '116' ,        'RNO1',        17,        5,        5,        'AUTO-PALLET',        'PALLET',        '4 Deep',        '4 Deep',        null,        null,        'CREATED',        null    );
+
+
+
+INSERT INTO slotbot.executions ( id, wh_id, is_active )
+VALUES (        0,          'RNO1',        false       ),
+       (       17,          'RNO1',         true       );
+
+INSERT INTO slotbot.execution_state (execution_id, state_id, is_active)
+VALUES (    17,    1,    true    );
+
+
+
+
+INSERT INTO outputs.forward_pick_location_attributes (wh_id, item_number, location_id, execution_id, recommended_min_trigger_qty, current_min_trigger_qty, recommended_max_trigger_qty, current_max_trigger_qty, recommended_replen_category, current_replen_category, recommended_dock_to_stock_flag, current_dock_to_stock_flag, recommended_dock_to_stock_split_flag, current_dock_to_stock_split_flag, recommendation_reason, rejection_comment, status_id, rejection_type_id)
+VALUES ('RNO1', 266724, 'M2L4-018-Z01', 17, 5, 6, 7, 8, 'PARP', 'REPLEN', true, false, false, true, null, null, 'CREATED', null);
+
+
+INSERT INTO outputs.forward_pick_location_attributes (wh_id, item_number, location_id, execution_id, recommended_min_trigger_qty, current_min_trigger_qty, recommended_max_trigger_qty, current_max_trigger_qty, recommended_replen_category, current_replen_category, recommended_dock_to_stock_flag, current_dock_to_stock_flag, recommended_dock_to_stock_split_flag, current_dock_to_stock_split_flag, recommendation_reason, rejection_comment, status_id, rejection_type_id)
+VALUES ('RNO1', 266725, 'M2L4-018-Z01', 17, 10, 10, 7, 7, 'PARP', 'PARP', false, false, true, false, null, null, 'CREATED', null);
+
+INSERT INTO outputs.forward_pick_location_attributes (wh_id, item_number, location_id, execution_id, recommended_min_trigger_qty, current_min_trigger_qty, recommended_max_trigger_qty, current_max_trigger_qty, recommended_replen_category, current_replen_category, recommended_dock_to_stock_flag, current_dock_to_stock_flag, recommended_dock_to_stock_split_flag, current_dock_to_stock_split_flag, recommendation_reason, rejection_comment, status_id, rejection_type_id)
+VALUES ('RNO1', 266726, 'M2L4-018-Z01', 17, 10, 12, 7, 7, 'REPLEN', 'PARP', true, false, true, true, null, null, 'CREATED', null);
+
+INSERT INTO outputs.unpickables (wh_id, item_number, execution_id, unpickable_container_count, unpickable_unit_count, avg_time_to_pull, recommended_replen_before_exhaust, current_replen_before_exhaust, current_location_id, recommended_location_id, recommended_min_trigger_qty, current_min_trigger_qty, recommended_max_trigger_qty, current_max_trigger_qty, recommended_pick_category, current_pick_category, recommended_dock_to_stock_flag, current_dock_to_stock_flag, recommendation_reason, rejection_comment, status_id, rejection_type_id)
+VALUES (                        'RNO1',       266724,           17,                        20,                   200,                1,                               200,                           199,      'M2L4-018-Z01',          'M2L4-018-Z02',                           5,                       6,                         100,                      99,                    'PARP',                'RPLN',                           true,                      false,                  null,              null, 'CREATED',              null);
+
+    INSERT INTO outputs.unpickables (wh_id, item_number, execution_id, unpickable_container_count, unpickable_unit_count, avg_time_to_pull, recommended_replen_before_exhaust, current_replen_before_exhaust, current_location_id, recommended_location_id, recommended_min_trigger_qty, current_min_trigger_qty, recommended_max_trigger_qty, current_max_trigger_qty, recommended_pick_category, current_pick_category, recommended_dock_to_stock_flag, current_dock_to_stock_flag, recommendation_reason, rejection_comment, status_id, rejection_type_id)
+VALUES (                        'RNO1',       266725,           17,                        20,                   200,                1,                               200,                           200,      'M2L4-018-Z02',          'M2L4-018-Z02',                           5,                       5,                         100,                      100,                    'PARP',                'PARP',                           true,                      true,                  null,              null, 'CREATED',              null);
+
+INSERT INTO outputs.unpickables (wh_id, item_number, execution_id, unpickable_container_count, unpickable_unit_count, avg_time_to_pull, recommended_replen_before_exhaust, current_replen_before_exhaust, current_location_id, recommended_location_id, recommended_min_trigger_qty, current_min_trigger_qty, recommended_max_trigger_qty, current_max_trigger_qty, recommended_pick_category, current_pick_category, recommended_dock_to_stock_flag, current_dock_to_stock_flag, recommendation_reason, rejection_comment, status_id, rejection_type_id)
+VALUES (                        'RNO1',       266726,           17,                        20,                   199,                1,                               200,                           200,      'M2L4-018-Z02',          'M2L4-018-Z02',                           5,                       5,                         100,                      100,                    'PARP',                'PARP',                           true,                      true,                  null,              null, 'CREATED',              null);
