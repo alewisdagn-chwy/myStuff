@@ -1,0 +1,11 @@
+UPDATE outputs.item_attributes 
+SET status_id = 'CREATED'
+WHERE status_id = 'ACCEPTED' OR status_id = 'REJECTED';
+
+UPDATE outputs.forward_pick_location_attributes 
+SET status_id = 'CREATED'
+WHERE status_id = 'ACCEPTED' OR status_id = 'REJECTED';
+
+UPDATE outputs.unpickables 
+SET status_id = 'CREATED'
+WHERE status_id = 'ACCEPTED' OR status_id = 'REJECTED';
