@@ -1,6 +1,6 @@
 INSERT INTO outputs.item_attributes ( item_number, wh_id, execution_id, current_class_id, recommended_class_id, current_pick_put_type, recommended_pick_put_type, current_forward_pick_location_type, recommended_forward_pick_location_type, recommendation_reason, rejection_comment, status_id, rejection_type_id )
 VALUES ( '110', 'RNO1', 17, 5, 5, 'AUTO-PALLET', 'PALLET', '4 Deep', '4 Deep',    null, null, 'CREATED', null),
-       ( '111', 'RNO1', 17, 5, 5, 'PALLET',      'PALLET', '4 Deep', '4 Cluster', null, null 'CREATED', null), 
+       ( '111', 'RNO1', 17, 5, 5, 'PALLET',      'PALLET', '4 Deep', '4 Cluster', null, null, 'CREATED', null), 
        ( '112', 'RNO1', 17, 5, 5, 'AUTO-PALLET', 'PALLET', '4 Deep', '4 Cluster', null, null, 'CREATED', null), 
        ( '113', 'RNO1', 17, 5, 5, 'PALLET', 'AUTO-PALLET', '4 Deep', '4 Deep',    null, null, 'CREATED', null),
        ( '114', 'RNO1', 17, 5, 6, 'AUTO-PALLET', 'PALLET', '4 Deep', '4 Deep',    null, null, 'CREATED', null), 
