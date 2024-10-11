@@ -34,3 +34,24 @@ VALUES (                        'RNO1',       266725,           17,             
 
 INSERT INTO outputs.unpickables (wh_id, item_number, execution_id, unpickable_container_count, unpickable_unit_count, avg_time_to_pull, recommended_replen_before_exhaust, current_replen_before_exhaust, current_location_id, recommended_location_id, recommended_min_trigger_qty, current_min_trigger_qty, recommended_max_trigger_qty, current_max_trigger_qty, recommended_pick_category, current_pick_category, recommended_dock_to_stock_flag, current_dock_to_stock_flag, recommendation_reason, rejection_comment, status_id, rejection_type_id)
 VALUES (                        'RNO1',       266726,           17,                        20,                   199,                1,                               200,                           200,      'M2L4-018-Z02',          'M2L4-018-Z02',                           5,                       5,                         100,                      100,                    'PARP',                'PARP',                           true,                      true,                  null,              null, 'CREATED',              null);
+
+INSERT INTO outputs.manual_actions (id, wh_id, item_number, execution_id, department, action, completed)
+VALUES ( 1, 'RNO1', 10, 17, 'Pallet', 'Slot', true),
+    ( 2, 'RNO1', 11, 17, 'Pallet', 'Slot', false),
+    ( 3, 'RNO1', 12, 17, 'Pallet', 'Slot', true),
+    ( 4, 'RNO1', 13, 17, 'Pallet', 'Slot', true),
+    ( 5, 'RNO1', 14, 17, 'Pallet', 'Slot', false),
+    ( 6, 'RNO1', 15, 17, 'Pallet', 'Slot', true),
+    ( 7, 'RNO1', 16, 17, 'Pallet', 'Slot', false),
+    ( 8, 'RNO1', 17, 17, 'Pallet', 'Slot', false),
+    ( 9, 'RNO1', 18, 17, 'Pallet', 'Slot', true),
+    ( 10, 'RNO1', 19, 17, 'Pallet', 'Slot', false),
+    ( 11, 'RNO1', 20, 17, 'Pallet', 'Slot', false),
+    ( 12, 'RNO1', 21, 17, 'Pallet', 'Slot', false),
+    ( 13, 'RNO1', 22, 17, 'Pallet', 'Slot', false),
+    ( 14, 'RNO1', 23, 17, 'Pallet', 'Slot', true),
+    ( 15, 'RNO1', 24, 17, 'Pallet', 'Slot', true),
+    ( 16, 'RNO1', 25, 17, 'Pallet', 'Slot', false),
+    ( 17, 'RNO1', 26, 17, 'Pallet', 'Slot', false),
+    ( 18, 'RNO1', 27, 17, 'Pallet', 'Slot', false),
+    ( 19, 'RNO1', 28, 17, 'Pallet', 'Slot', false);
