@@ -9,3 +9,7 @@ WHERE status_id = 'ACCEPTED' OR status_id = 'REJECTED';
 UPDATE outputs.unpickables 
 SET status_id = 'CREATED'
 WHERE status_id = 'ACCEPTED' OR status_id = 'REJECTED';
+
+UPDATE outputs.move_chain
+SET status_id = 'CREATED'
+WHERE status_id = 'ACCEPTED' OR status_id = 'REJECTED';
