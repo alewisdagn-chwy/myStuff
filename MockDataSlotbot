@@ -55,3 +55,8 @@ VALUES ( 1, 'RNO1', 10, 17, 'Pallet', 'Slot', true),
     ( 17, 'RNO1', 26, 17, 'Pallet', 'Slot', false),
     ( 18, 'RNO1', 27, 17, 'Pallet', 'Slot', false),
     ( 19, 'RNO1', 28, 17, 'Pallet', 'Slot', false);
+
+
+
+INSERT INTO outputs.move_chain ( wh_id, execution_id, priority_id, status_id, rejection_type_id, rejection_comment) 
+VALUES ( 'RNO1', 273, 0, 'CREATED', null, null) 
